@@ -1,0 +1,268 @@
+/* GLOBAL CSS */
+
+body {
+  font-family: Arial, Tahoma, sans-serif;
+  font-size:16px;
+  margin:0px auto;
+
+}
+
+.siteContainer {
+  margin:0px auto;
+}
+
+/* HEADER CSS */
+
+.headerContainer {
+  min-height:8em;
+  width:100%;
+  background-color:white;
+  box-shadow: 2px 0px 5px 1px gray;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+}
+
+.headerContainer img {
+  height:6em;
+}
+
+.headerContainer ul {
+  list-style-type:none;
+}
+
+.headerContainer ul li {
+  display:inline;
+  margin-right:15px;
+}
+
+.headerContainer ul li a {
+  text-decoration:none;
+  color: #F03861;
+  padding-bottom:2px;
+  border-bottom: 1px solid #F03861;
+  font-weight:bold;
+}
+
+#logoDiv {
+  margin-left:20px;
+}
+
+#headerNav {
+  align-self:flex-end;
+  margin-right:20px;
+}
+
+/*SHOWCASE/HERO SECTION */
+
+.showcase {
+  min-height:600px;
+  background-image: url("pizzaHero.jpg");
+  background-size: 100% 800px;
+  background-repeat:no-repeat;
+  background-position:0 -50px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  text-align:center;
+  margin-bottom:150px;
+  margin-top:8em;
+
+}
+
+#heroText {
+  color:#F03861;
+  margin:0px;
+  margin-top:30px;
+  width:22%;
+  text-shadow: 1.0px 1.0px black;
+  background-color: rgba(245, 217,126, 0.7);
+  border: 1px solid #F03861;
+}
+
+#heroText h1 {
+  color:#F03861;
+  margin:0px;
+  font-size:3.5em;
+  text-shadow:1.5px 1.5px #F5D97E;
+}
+
+#heroText p {
+  font-size:1.2em;
+
+}
+
+/*CONTENT SECTION */
+
+.content {
+  margin:0px auto;
+
+  width:80%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+.box {
+  width:40%;
+  margin-bottom:40px;
+
+}
+
+.box img {
+  width:100%;
+  border: 1px solid #F5D97E;
+}
+
+/*FOOTER SECTION*/
+.footer {
+    background-color: #151515;
+    min-height:120px;
+    display:flex;
+    justify-content: space-between;
+    background-image: url("logo.png");
+    background-size: auto 6em;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.footer ul {
+  list-style-type:none;
+}
+
+.footer ul li {
+  margin-bottom:15px;
+}
+
+.footer ul li a {
+  color:white;
+  text-decoration:none;
+  margin: 8px;
+  border-bottom:1px solid white;
+  padding-bottom:2px;
+}
+
+.footer a:hover {
+  color:#F5D97E;
+}
+
+.footer img {
+  height: 6em;
+  align-self:center;
+}
+
+#footerLinks {
+  display:flex;
+}
+
+.footer p {
+  align-self:center;
+  margin-right:50px;
+  color:white;
+}
+
+/*MEDIA QUERIES */
+
+@media (max-width:768px) {
+  .headerContainer,
+  .headerContainer ul,
+  .headerContainer ul li,
+  #logoDiv,
+  #headerNav,
+  .showcase {
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    align-self:auto;
+  }
+
+  .headerContainer ul li {
+    padding:3px 5px 3px 5px;
+  }
+  .headerContainer {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-height:7em;
+  }
+
+  .headerContainer img {
+    height:5em;
+  }
+
+  .showcase {
+    background-image:none;
+    margin-bottom: -30px;
+  }
+
+  #heroText {
+      text-align:center;
+      width: 80%;
+  }
+
+  #heroText h1 {
+    font-size:2.6em;
+    margin:0px;
+    text-align:center;
+  }
+
+  #heroText p {
+    font-size:1.1em;
+    text-shadow:none;
+  }
+
+  .content {
+    display:flex;
+  }
+
+  .box {
+    width:80%;
+    font-family: Tahoma;
+  }
+
+  .footer {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .footer p {
+    margin:0px auto;
+    margin-bottom:20px;
+  }
+
+  #footerLinks {
+    flex-direction:column;
+  }
+
+  #footerLinks li {
+    display:inline-block;
+  }
+
+  #footerLinks ul {
+    padding:0px;
+  }
+
+  #footerLinks,
+  {
+    margin:0px;
+  }
+
+  .footer {
+    background-position:5% 50%;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .footer {
+    background-image:none;
+  }
+}
