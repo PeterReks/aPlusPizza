@@ -1,2 +1,0 @@
-# aPlusPizza
-Pizza Portfolio Project
